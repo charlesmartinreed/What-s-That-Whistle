@@ -162,7 +162,9 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @objc func nextTapped() {
-        
+        //present the select genre view controller
+        let vc = SelectGenreViewController()
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     
