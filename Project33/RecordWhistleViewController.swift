@@ -9,6 +9,10 @@
 import UIKit
 import AVFoundation
 
+//AVAudioSession and AVAudioRecorder
+//Session enables and tracks collective sound recordings. Ensures recording is possible.
+//Recorder is used to track individual recording sessions. Responsible for actually pulling data from mic and writing to disk.
+
 class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     
     //MARK:- Properties
@@ -89,6 +93,7 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
         stackView.addArrangedSubview(failLabel)
     }
     
+    
     //MARK:- Saving and retrieving recordings
     //class func so we can call them on class, not instances
     class func getDocumentsDirectory() -> URL {
@@ -109,8 +114,12 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     //recording ceases during system events like an incoming call, but not necessarily if your app goes into background
     
     @objc func recordTapped() {
-        
-        
+        //call startRecording or finishRecording, depending upon the app state
+        if whistleRecorder == nil {
+            startRecording()
+        } else {
+            finishRecording(success: true)
+        }
     }
     
     @objc func nextTapped() {
@@ -169,11 +178,16 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
+    //MARK:- AVAudioRecorder delegate method
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if !flag {
+            finishRecording(success: false)
+        }
+    }
+    
   
 
-    //AVAudioSession and AVAudioRecorder
-    //Session enables and tracks collective sound recordings. Ensures recording is possible.
-    //Recorder is used to track individual recording sessions. Responsible for actually pulling data from mic and writing to disk.
+   
     
 
     /*
