@@ -15,6 +15,7 @@
 		8CAE51702135AB95004B037C /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE516F2135AB95004B037C /* RecordWhistleViewController.swift */; };
 		8CAE51722135C3A9004B037C /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE51712135C3A9004B037C /* SelectGenreViewController.swift */; };
 		8CAE51762135C646004B037C /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE51752135C646004B037C /* AddCommentsViewController.swift */; };
+		8CAE51782135CC61004B037C /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE51772135CC61004B037C /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8CAE516F2135AB95004B037C /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
 		8CAE51712135C3A9004B037C /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
 		8CAE51752135C646004B037C /* AddCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		8CAE51772135CC61004B037C /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				8CAE516F2135AB95004B037C /* RecordWhistleViewController.swift */,
 				8CAE51712135C3A9004B037C /* SelectGenreViewController.swift */,
 				8CAE51752135C646004B037C /* AddCommentsViewController.swift */,
+				8CAE51772135CC61004B037C /* SubmitViewController.swift */,
 				8CAE51612135A7F2004B037C /* Main.storyboard */,
 				8CAE51642135A7F4004B037C /* Assets.xcassets */,
 				8CAE51662135A7F4004B037C /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				8CAE51762135C646004B037C /* AddCommentsViewController.swift in Sources */,
 				8CAE515E2135A7F2004B037C /* AppDelegate.swift in Sources */,
 				8CAE51722135C3A9004B037C /* SelectGenreViewController.swift in Sources */,
+				8CAE51782135CC61004B037C /* SubmitViewController.swift in Sources */,
 				8CAE51702135AB95004B037C /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

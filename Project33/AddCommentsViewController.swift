@@ -16,6 +16,8 @@ class AddCommentsViewController: UIViewController, UITextViewDelegate {
     let placeholder = "Do you have any additional comments that might help identify your tune?"
     
     override func loadView() {
+        super.loadView()
+        
         //creating our UITextView and pinning it to all the edges using Auto Layout
         comments = UITextView()
         comments.translatesAutoresizingMaskIntoConstraints = false
